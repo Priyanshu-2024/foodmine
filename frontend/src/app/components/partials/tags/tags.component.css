@@ -1,0 +1,23 @@
+*{
+    text-decoration: none;
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  div a {
+    background-color: #e3f2fd;
+    padding: 0.3rem 1rem;
+    margin: 0.2rem 0.15rem;
+    border-radius: 10rem;
+    font-weight: 600;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+    font-weight: 300;
+  }
+  
+  a .active {
+    background-color: red;
+  }
