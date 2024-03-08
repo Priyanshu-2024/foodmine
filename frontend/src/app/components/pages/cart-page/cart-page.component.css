@@ -2,6 +2,7 @@
   text-decoration: none;
 }
 ul{
+  background-color: #3A4D39;
   display: flex;
   flex-direction: column;
   flex:3 0;
@@ -13,7 +14,7 @@ ul{
   padding: 0;
 }
 .name{
-  color: black;
+  color: #ECE3CE;
 }
 
 ul li{
@@ -44,6 +45,7 @@ li div:not(:first-child){
 }
 
 li select{
+  background-color: #ECE3CE;
   width: 3rem;
   outline: none;
   border: none;
@@ -56,19 +58,19 @@ li .remove-button{
   border-radius: 1rem;
   border: none;
   padding: 0.5rem;
-  background-color: #e3f2fd;
+  background-color: #ECE3CE;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  opacity: 0.7;
+  
   outline: none;
   color: black;
 }
-
-li .remove-button:hover{
-  opacity: 1;
-  cursor: pointer;
+.price{
+  color: #ECE3CE;
 }
 
+
 .checkout{
+  background-color: #3A4D39;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,6 +84,7 @@ li .remove-button:hover{
 }
 
 .checkout>div{
+
   font-size: 1.4rem;
   margin: 1rem;
   flex: 3;
@@ -97,31 +100,28 @@ li .remove-button:hover{
 
 .foods-count::before{
   content:"Count: ";
-  color: grey;
+  color: #ECE3CE;
 }
 
 .total-price::before{
   content: 'Price: ';
-  color: grey;
+  color: #ECE3CE;
 }
 
 .checkout a{
   padding: 1rem;
   color: black;
-  background:#e3f2fd;
+  background:#ECE3CE;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: block;
   width: 99%;
   border-radius: 1rem;
   text-align: center;
-  opacity: 0.7;
+  
   justify-self: center;
 }
 
-.checkout a:hover{
-  opacity: 1;
-  cursor: pointer;
-}
+
 .select{
   border-bottom: none !important;
 }

@@ -19,6 +19,7 @@ ul {
 }
 
 li a {
+  background-color: #4F6F52;
   height: 22.5rem;
   width: 20rem;
   border: 1px solid whitesmoke;
@@ -76,10 +77,10 @@ li a img {
 
 .origins span {
   border-radius: 2rem;
-  background-color: whitesmoke;
+  background-color: #ECE3CE;
   display: inline-block;
   font-size: 0.8rem;
-  color: grey;
+  color: #4F6F52;
   margin-right: 0.3rem;
   padding: 0 0.5rem;
   margin-top: 0.2rem;
@@ -88,6 +89,7 @@ li a img {
 .cook-time {
   font-size: 0.9rem;
   flex: 3;
+  color:#ECE3CE ;
   text-align: right;
 }
 
@@ -95,9 +97,9 @@ li a img {
   position: absolute;
   bottom: 0;
   left: 0.9rem;
-  background: white;
+  background: #4F6F52;
   padding: 0.3rem 100% 0 0;
-  color: #414141;
+  color: #ECE3CE;
   margin-top: 0.7rem;
   font-size: 1.1rem;
 }

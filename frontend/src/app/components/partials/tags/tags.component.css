@@ -8,12 +8,12 @@ div {
   }
   
   div a {
-    background-color: #e3f2fd;
+    background-color: #ECE3CE;
     padding: 0.3rem 1rem;
     margin: 0.2rem 0.15rem;
     border-radius: 10rem;
-    font-weight: 600;
-    color: black;
+    font-weight: bolder;
+    color: #3A4D39;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
     font-weight: 300;
   }
