@@ -3,7 +3,6 @@ div {
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-  
 }
 
 input {
@@ -11,7 +10,7 @@ input {
   border: none;
   height: 3rem;
   width: 20rem;
-  background-color: #ECE3CE;
+  background-color: #ece3ce;
   padding: 1.2rem;
   font-size: 1.1rem;
   font-weight: 500;
@@ -26,7 +25,7 @@ div button {
   font-size: 1rem;
   border-radius: 0 10rem 10rem 0;
   border: none;
-  background-color: #3A4D39;
+  background-color: #3a4d39;
   color: black;
   opacity: 0.8;
   outline: none;

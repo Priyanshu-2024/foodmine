@@ -18,17 +18,17 @@ export class FoodService {
     );
   }
 
-  getalltags(): tags[]{ 
-    return sample_tags
+  getalltags(): tags[] {
+    return sample_tags;
   }
 
-  getallfoodsbytag(tag:string):food[]{
-     return tag ==="All"?
-     this.getAll():
-      this.getAll().filter(food => food.tags?.includes(tag))
+  getallfoodsbytag(tag: string): food[] {
+    return tag === 'All'
+      ? this.getAll()
+      : this.getAll().filter((food) => food.tags?.includes(tag));
   }
 
-  getfoodbyid(foodid:string):food{
-    return this.getAll().find(food => food.id == foodid) ?? new food();
+  getfoodbyid(foodid: string): food {
+    return this.getAll().find((food) => food.id == foodid) ?? new food();
   }
 }

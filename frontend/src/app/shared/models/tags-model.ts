@@ -1,4 +1,4 @@
-export class tags{
-    name!:string
-    count!:number
+export class tags {
+  name!: string;
+  count!: number;
 }

@@ -17,10 +17,9 @@ export class HomeComponent {
     activatedroute.params.subscribe((params) => {
       if (params.searchterm) {
         this.foods = this.foodservice.getfoodbysearch(params.searchterm);
-      }else if(params.tag){
-        this.foods = this.foodservice.getallfoodsbytag(params.tag)
-      } 
-      else {
+      } else if (params.tag) {
+        this.foods = this.foodservice.getallfoodsbytag(params.tag);
+      } else {
         this.foods = foodservice.getAll();
       }
     });

@@ -1,8 +1,8 @@
-import { food } from "./app/shared/models/food-model";
-import { tags } from "./app/shared/models/tags-model";
+import { food } from './app/shared/models/food-model';
+import { tags } from './app/shared/models/tags-model';
 export const sample_foods: food[] = [
   {
-    id:'1',
+    id: '1',
     name: 'Pizza',
     cookTime: '10-20',
     price: 10,
@@ -13,7 +13,7 @@ export const sample_foods: food[] = [
     tags: ['FastFood', 'Pizza', 'Lunch'],
   },
   {
-    id:'2',
+    id: '2',
     name: 'burger',
     price: 20,
     cookTime: '20-30',
@@ -24,7 +24,7 @@ export const sample_foods: food[] = [
     tags: ['SlowFood', 'Lunch'],
   },
   {
-    id:'3',
+    id: '3',
     name: 'pasta',
     price: 5,
     cookTime: '10-15',
@@ -35,7 +35,7 @@ export const sample_foods: food[] = [
     tags: ['FastFood', 'Hamburger'],
   },
   {
-    id:'4',
+    id: '4',
     name: 'sushi',
     price: 2,
     cookTime: '15-20',
@@ -46,7 +46,7 @@ export const sample_foods: food[] = [
     tags: ['FastFood', 'Fry'],
   },
   {
-    id:'5',
+    id: '5',
     name: 'tacos',
     price: 11,
     cookTime: '40-50',
@@ -57,7 +57,7 @@ export const sample_foods: food[] = [
     tags: ['SlowFood', 'Soup'],
   },
   {
-    id:'6',
+    id: '6',
     name: 'sushi roll',
     price: 9,
     cookTime: '40-50',
@@ -67,7 +67,7 @@ export const sample_foods: food[] = [
     imageUrl: './assets/roll.jpeg',
     tags: ['FastFood', 'Pizza', 'Lunch'],
   },
-]
+];
 
 export const sample_tags: tags[] = [
   { name: 'All', count: 6 },
@@ -78,4 +78,4 @@ export const sample_tags: tags[] = [
   { name: 'Hamburger', count: 1 },
   { name: 'Fry', count: 1 },
   { name: 'Soup', count: 1 },
-]
+];

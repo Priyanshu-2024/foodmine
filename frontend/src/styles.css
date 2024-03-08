@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap'); */
 
-body{
-    /* font-family: "anta",sans-serif; */
-    margin: 0;
-    background-color: #e9e5dc !important;
+body {
+  /* font-family: "anta",sans-serif; */
+  margin: 0;
+  background-color: #e9e5dc !important;
 }
 
-*{
-    box-sizing: 16px;
-    text-decoration: none;
+* {
+  box-sizing: 16px;
+  text-decoration: none;
 }
-

@@ -7,23 +7,23 @@ import { food } from 'src/app/shared/models/food-model';
 @Component({
   selector: 'app-food-page',
   templateUrl: './food-page.component.html',
-  styleUrls: ['./food-page.component.css']
+  styleUrls: ['./food-page.component.css'],
 })
 export class FoodPageComponent {
-food! : food;
+  food!: food;
 
-constructor(activatedroute:ActivatedRoute, foodservice : FoodService, private cartservice:CartService, private router:Router){
-  activatedroute.params.subscribe((params) => {
-    if(params.id)
-    this.food = foodservice.getfoodbyid(params.id)
-  })
-  
-  
-  
- 
-}
-addTocart(){
-  this.cartservice.addToCart(this.food);
-  this.router.navigateByUrl('/cart-page')
-}
+  constructor(
+    activatedroute: ActivatedRoute,
+    foodservice: FoodService,
+    private cartservice: CartService,
+    private router: Router
+  ) {
+    activatedroute.params.subscribe((params) => {
+      if (params.id) this.food = foodservice.getfoodbyid(params.id);
+    });
+  }
+  addTocart() {
+    this.cartservice.addToCart(this.food);
+    this.router.navigateByUrl('/cart-page');
+  }
 }

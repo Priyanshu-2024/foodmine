@@ -6,13 +6,12 @@ import { tags } from 'src/app/shared/models/tags-model';
 @Component({
   selector: 'app-tags',
   templateUrl: './tags.component.html',
-  styleUrls: ['./tags.component.css']
+  styleUrls: ['./tags.component.css'],
 })
 export class TagsComponent {
-  tags?:tags[];
+  tags?: tags[];
 
-  constructor(foodservice:FoodService){
+  constructor(foodservice: FoodService) {
     this.tags = foodservice.getalltags();
   }
-  
 }
