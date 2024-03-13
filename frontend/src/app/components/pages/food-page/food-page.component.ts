@@ -18,8 +18,11 @@ export class FoodPageComponent {
     private cartservice: CartService,
     private router: Router
   ) {
-    activatedroute.params.subscribe((params) => {
-      if (params.id) this.food = foodservice.getfoodbyid(params.id);
+    activatedroute.params.subscribe(params => {
+      if (params.id)
+        foodservice.getfoodbyid(params.id).subscribe((serverfoods) => {
+          this.food = serverfoods;
+        });
     });
   }
   addTocart() {
