@@ -11,6 +11,8 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => { res.send("Express on Vercel"); });
+
 app.get("/api/foods", (req, res) => {
   res.send(sample_foods);
 });
@@ -42,3 +44,6 @@ const port = 5000;
 app.listen(port, () => {
   console.log("Website is served on http://localhost:" + port);
 });
+
+
+module.exports = app;
