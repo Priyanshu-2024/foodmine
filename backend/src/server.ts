@@ -7,7 +7,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: ["https://foodmine-psi.vercel.app"],
+    origin: ["http://localhost:4200"],
   })
 );
 
@@ -38,7 +38,7 @@ app.get("/api/foods/:foodId", (req, res) => {
     const food = sample_foods.find(food => food.id == foodid)
     res.send(food);
 })
-const port = 6000;
+const port = 5000;
 app.listen(port, () => {
   console.log("Website is served on http://localhost:" + port);
 });
