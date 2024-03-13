@@ -1,15 +1,15 @@
 import express from "express";
-// import cors from "cors";
+import cors from "cors";
 import { sample_foods, sample_tags } from "./data";
 
 const app = express();
 
-// app.use(
-//   cors({
-//     credentials: true,
-//     origin: ["http://localhost:4200"],
-//   })
-// );
+app.use(
+  cors({
+    credentials: true,
+    origin: ["http://localhost:4200"],
+  })
+);
 
 app.get("/", (req, res) => { res.send("Express on Vercel"); });
 
@@ -46,4 +46,3 @@ app.listen(port, () => {
 });
 
 
-module.exports = app;
