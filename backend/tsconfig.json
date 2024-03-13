@@ -8,5 +8,5 @@
       "emitDecoratorMetadata": true,
       "esModuleInterop": true
     },
-    "include": ["./src/*.ts"],
+    "include": ["src/**/*"],
 }
