@@ -38,7 +38,7 @@ app.get("/api/foods/:foodId", (req, res) => {
     const food = sample_foods.find(food => food.id == foodid)
     res.send(food);
 })
-const port = 5000;
+const port = 6000;
 app.listen(port, () => {
   console.log("Website is served on http://localhost:" + port);
 });
