@@ -21,13 +21,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <li *ngIf="!isAuth" class="nav-item">
             <a class="nav-link" routerLink="/login">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/">Home</a>
           </li>
-          <li class="nav-item dropdown">
+          <li *ngIf="isAuth" class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -36,18 +36,18 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Priyanshu
+              {{user.name}}
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul  class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><a class="dropdown-item" href="#">Orders</a></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/cart-page"
               ><i class="bi bi-cart"></i> Cart
-              <span class="badge text-bg-danger">3</span></a
+              <span class="badge text-bg-danger">{{cartquantity}}</span></a
             >
           </li>
         </ul>

@@ -1,5 +1,6 @@
 .dropdown-item {
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .dropdown-item:hover {

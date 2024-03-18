@@ -1,49 +1,37 @@
 import express from "express";
 import cors from "cors";
-import { sample_foods, sample_tags } from "./src/data";
+import dotenv from 'dotenv'
+dotenv.config();
+import foodRouter from './src/Routers/food-router';
+import userRouter from './src/Routers/user-router';
+import { dbConnect } from "./src/configs/database.config";
+dbConnect();
 
 const app = express();
-
+app.use(express.json());
 app.use(
   cors({
     credentials: true,
+    // origin: ["http://localhost:4200"],
     origin: ["https://foodmine-nine.vercel.app"],
   })
 );
 
-app.get("/", (req, res) => { res.send("Express on Vercel"); });
 
-app.get("/api/foods", (req, res) => {
-  res.send(sample_foods);
+app.use("/api/foods", foodRouter)
+app.use("/api/users", userRouter)
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
 });
 
-app.get("/api/foods/search/:searchTerm", (req, res) => {
-  const searchterm = req.params.searchTerm;
-  const food = sample_foods.filter((food) =>
-    food.name.toLowerCase().includes(searchterm.toLowerCase())
-  );
-  res.send(food);
-});
 
-app.get("/api/foods/tags", (req, res) => {
-  res.send(sample_tags);
-});
 
-app.get("/api/foods/tags/:tagname", (req, res) => {
-  const tagName = req.params.tagname;
-  const foods = sample_foods.filter(food => food.tags?.includes(tagName));
-  res.send(foods);
-});
 
-app.get("/api/foods/:foodId", (req, res) => {
-    const foodid = req.params.foodId;
-    const food = sample_foods.find(food => food.id == foodid)
-    res.send(food);
-})
+
+
 const port = 5000;
 app.listen(port, () => {
   console.log("Website is served on http://localhost:" + port);
 });
 
-
-module.exports = app
+module.exports = app;
