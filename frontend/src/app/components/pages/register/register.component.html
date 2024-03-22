@@ -1,0 +1,52 @@
+<body>
+  <div class="login-card">
+    <div class="card-image">
+      <!-- Replace 'your-image-url.jpg' with your image path -->
+      <img
+      src="https://burst.shopifycdn.com/photos/hamburger-and-fries.jpg?width=1000&format=pjpg&exif=0&iptc=0"
+        alt="Login Visual"
+      />
+    </div>
+    <div class="login-form">
+      <form action="post" [formGroup]="registerForm" (ngSubmit)="submit()">
+        <h2>Create New Account</h2>
+        <text-input
+        [control]="fc.name"
+        [showErrorsWhen]="isSubmitted"
+        label="Name">
+      `</text-input>
+  
+      <text-input
+      [control]="fc.email"
+      [showErrorsWhen]="isSubmitted"
+      label="Email"
+      type="email">
+    `</text-input>
+  
+  
+    <text-input
+    [control]="fc.password"
+    [showErrorsWhen]="isSubmitted"
+    label="Password"
+    type="password">
+  `</text-input>
+  
+  <text-input
+  [control]="fc.confirmPassword"
+  [showErrorsWhen]="isSubmitted"
+  label="Confirm Password"
+  type="password">
+  `</text-input>
+  
+  <text-input
+  [control]="fc.address"
+  [showErrorsWhen]="isSubmitted"
+  label="Address">
+  `</text-input>
+   
+        <button type="submit" class="my-2">Register</button>
+        <p class="mt-1">Already have Account ? &nbsp;<a routerLink="/login" class="login-link">Login</a></p>
+      </form>
+    </div>
+  </div>
+</body>

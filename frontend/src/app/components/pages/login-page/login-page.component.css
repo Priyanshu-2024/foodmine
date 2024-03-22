@@ -26,7 +26,7 @@ body, html {
 .login-form {
     padding: 20px;
     display: flex;
-    color: #ECE3CE;
+    /* color: #ECE3CE; */
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +39,7 @@ body, html {
 .input-group label {
     display: block;
     margin-bottom: 5px;
+    color:  #ECE3CE ;
 }
 
 .input-group input {
@@ -76,4 +77,7 @@ button:hover {
         height: 200px; 
     }
 }
-
+.login-link{
+    text-decoration: none;
+    color: #ECE3CE;
+  }

@@ -4,16 +4,16 @@ import dotenv from 'dotenv'
 dotenv.config();
 import foodRouter from './src/Routers/food-router';
 import userRouter from './src/Routers/user-router';
-// import { dbConnect } from "./src/configs/database.config";
-// dbConnect();
+import { dbConnect } from "./src/configs/database.config";
+dbConnect();
 
 const app = express();
 app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    // origin: ["http://localhost:4200"],
-    origin: ["https://foodmine-nine.vercel.app"],
+    origin: ["http://localhost:4200"],
+    // origin: ["https://foodmine-nine.vercel.app"],
   })
 );
 
