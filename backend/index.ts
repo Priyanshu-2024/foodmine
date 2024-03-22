@@ -13,7 +13,7 @@ app.use(
   cors({
     credentials: true,
     // origin: ["http://localhost:4200"],
-    origin: ["https://foodmine-nine.vercel.app"],
+    origin: ["https://foodmine-fullstack.vercel.app"],
   })
 );
 
