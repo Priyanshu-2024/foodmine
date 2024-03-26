@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem; /* Adjust outer margin */
+}
+
+.content {
+  width: 100%; /* Occupy full width on smaller screens */
+  max-width: 35rem; /* Limit maximum width */
+  margin-right: 2rem; /* Adjust spacing */
+}
+
+.content form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem; /* Add padding for better spacing */
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.buttons-container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: #fff;
+  background-color: #4CAF50;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.5rem; /* Adjust padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .content {
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+}

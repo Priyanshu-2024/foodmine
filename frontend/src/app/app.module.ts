@@ -21,6 +21,8 @@ import { TextInputComponent } from './components/partials/text-input/text-input.
 import { InputValidationComponent } from './components/partials/input-validation/input-validation.component';
 import { LoadingComponent } from './components/partials/loading/loading.component';
 import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
+import { CheckoutComponent } from './components/pages/checkout/checkout.component';
+import { OrderItemsListComponent } from './components/partials/order-items-list/order-items-list.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
     TextInputComponent,
     InputValidationComponent,
     LoadingComponent,
+    CheckoutComponent,
+    OrderItemsListComponent,
   ],
   imports: [BrowserModule,BrowserAnimationsModule, AppRoutingModule, RatingModule,HttpClientModule,ReactiveFormsModule,ToastrModule.forRoot({
     timeOut:3000,

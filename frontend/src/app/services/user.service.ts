@@ -16,7 +16,9 @@ export class UserService {
   constructor(private http:HttpClient, private toastrservice : ToastrService) { 
     this.userObservable = this.userSubject.asObservable();
    }
-
+   public get CurrentUser():usermodel{
+    return this.userSubject.value;
+     }
    login(userLogin : UserLogin): Observable<usermodel>{
     return this.http.post<usermodel>(USER_LOGIN_URL, userLogin).pipe(
       tap({
