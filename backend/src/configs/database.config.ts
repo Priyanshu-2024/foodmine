@@ -6,7 +6,7 @@ dotenv.config();
 
 
 const dbConnect = () => {
-    mongoose.connect("mongodb+srv://foodmine:ULCCBiOYThg57Oug@foodmine.tg6s45p.mongodb.net/", {
+    mongoose.connect("mongodb+srv://foodmine:ULCCBiOYThg57Oug@foodmine.tg6s45p.mongodb.net/foodmine", {
 
     })
     .then(() => {

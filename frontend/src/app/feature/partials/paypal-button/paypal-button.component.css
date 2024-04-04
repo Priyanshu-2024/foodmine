@@ -1,11 +1,10 @@
-
-button{
-   width: 40%;
-   background-color: #DED0B6;
-  color: black;
-  cursor: pointer;
+.btn-warning {
+  background-color: #ec2a2a;
+  color: white;
+  border-color: #1a1918;
 }
-button:hover {
-    background-color: #607274;
-    color: white;
-  }
+
+.btn-warning:hover {
+  background-color: #ff0000;
+  border-color: #1a1918;
+}

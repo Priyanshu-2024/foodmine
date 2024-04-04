@@ -27,7 +27,7 @@
                     <!-- <p class="mb-3"><strong>Name:</strong> {{ checkoutForm.value.name }}</p>
                     <p class="mb-3"><strong>Address:</strong> {{ checkoutForm.value.address }}</p> -->
                     
-                        <app-map [order]="order" [readonly]="true"></app-map>
+                    <app-map [order]="order" [readonly]="true"></app-map>
                 </div>
             </div>
         </div>
@@ -39,7 +39,9 @@
                     <h2 class="card-title mb-4">Proceed to Payment</h2>
                     <p class="lead">Please review your order details and proceed to payment to complete your purchase.</p>
                     <p><strong>Total_Price: </strong> ${{order.totalPrice}}</p>
-                    <!-- <button class="btn btn-warning btn-lg" (click)="createOrder()">Proceed to Payment</button> -->
+                    <app-paypal-button [order]="order">
+
+                    </app-paypal-button>
                 </div>
             </div>
         </div>

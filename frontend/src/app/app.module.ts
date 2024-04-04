@@ -57,6 +57,7 @@ import { NgxPayPalModule } from 'ngx-paypal';
     MapComponent,
     PaymentPageComponent,
     PaypalButtonComponent,
+
   ],
   imports: [
     BrowserModule,
