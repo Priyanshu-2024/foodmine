@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  width: 100%; 
+  max-width: 30rem; 
+  height: 18rem;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.find-location {
+  position: absolute;
+  width: 15rem;
+  min-height: 3rem;
+  font-size: 1.2rem;
+  top: 10%; 
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  z-index: 1000;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem; 
+  cursor: pointer;
+  padding: 0.5rem 1rem; 
+  font-family: Arial, sans-serif; 
+  transition: background-color 0.3s ease; 
+}
+
+.find-location:hover {
+  background-color: #0056b3; 
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 100%;
+  }
+
+  .find-location { 
+    width: 60%; 
+    font-size: 0.70rem; 
+  }
+}

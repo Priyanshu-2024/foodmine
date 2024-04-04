@@ -1,0 +1,18 @@
+.dropdown-item {
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  transform: scale(1.2);
+  background: transparent;
+}
+
+nav {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom: 2px solid black;
+}
+li a {
+  color: #3a4d39;
+}

@@ -1,0 +1,124 @@
+* {
+  text-decoration: none;
+}
+ul {
+  background-color: #3A4D39;
+  display: flex;
+  flex-direction: column;
+  flex: 3 0;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+  list-style: none;
+  margin: 0.5rem;
+  padding: 0;
+}
+.name {
+  color: #ece3ce;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+li img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100rem;
+  object-fit: cover;
+}
+
+li div {
+  padding: 1rem;
+}
+
+li div:not(:first-child) {
+  flex-basis: 18%;
+}
+
+li select {
+  background-color: #ece3ce;
+  width: 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+li .remove-button {
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem;
+  background-color: #ece3ce;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  outline: none;
+  color: black;
+}
+.price {
+  color: #ece3ce;
+}
+
+.checkout {
+  background-color: #3A4D39;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.checkout > div {
+  font-size: 1.4rem;
+  margin: 1rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.foods-count {
+  margin-bottom: 1.5rem;
+}
+
+.foods-count::before {
+  content: "Count: ";
+  color: #ece3ce;
+}
+
+.total-price::before {
+  content: "Price: ";
+  color: #ece3ce;
+}
+
+.checkout a {
+  padding: 1rem;
+  color: black;
+  background: #ece3ce;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: block;
+  width: 99%;
+  border-radius: 1rem;
+  text-align: center;
+
+  justify-self: center;
+}
+
+.select {
+  border-bottom: none !important;
+}

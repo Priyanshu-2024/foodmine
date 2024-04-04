@@ -1,0 +1,56 @@
+.order-items {
+  margin-top: 20px;
+ 
+}
+
+.order-items h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3A4D39;
+  color: #ECE3CE;
+}
+td{
+  background-color: #3A4D39;
+  color: #ECE3CE;
+}
+tr:nth-child(even) {
+  background-color: #3A4D39;
+}
+
+tr:hover {
+  background-color: #3A4D39;
+}
+
+.image-cell img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
