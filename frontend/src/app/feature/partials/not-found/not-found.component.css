@@ -18,19 +18,19 @@ body {
 .not-found-title {
   font-size: 3em;
   margin-bottom: 20px;
-  color: #3A4D39;
+  color: #3a4d39;
 }
 
 .not-found-message {
   font-size: 1.2em;
   margin-bottom: 30px;
-  color: #3A4D39;
+  color: #3a4d39;
 }
 
 .not-found-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #3A4D39;
+  background-color: #3a4d39;
   color: black;
   text-decoration: none;
   border-radius: 5px;
@@ -41,15 +41,14 @@ body {
   background-color: #3d5c3d;
 }
 
-
 @media screen and (max-width: 768px) {
   .not-found-container {
-      padding: 0 20px;
+    padding: 0 20px;
   }
   .not-found-title {
-      font-size: 2.5em;
+    font-size: 2.5em;
   }
   .not-found-message {
-      font-size: 1em;
+    font-size: 1em;
   }
 }

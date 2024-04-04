@@ -1,7 +1,9 @@
 <div class="not-found-container" *ngIf="visible">
-    <div class="not-found-content">
-        <h1 class="not-found-title">Page Not Found</h1>
-        <p class="not-found-message">{{notfound}}</p>
-        <a class="not-found-link" [routerLink]="resetLinkRoute">{{resetLinkText}}</a>
-    </div>
+  <div class="not-found-content">
+    <h1 class="not-found-title">Page Not Found</h1>
+    <p class="not-found-message">{{ notfound }}</p>
+    <a class="not-found-link" [routerLink]="resetLinkRoute">{{
+      resetLinkText
+    }}</a>
+  </div>
 </div>

@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 80vh;
@@ -7,17 +8,16 @@ body, html {
   align-items: center;
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f4; */
-  
 }
-h2{
-  color: #ECE3CE;
+h2 {
+  color: #ece3ce;
 }
 .login-card {
   display: flex;
-  background-color: #3A4D39;
+  background-color: #3a4d39;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .card-image img {
@@ -41,7 +41,7 @@ h2{
 .input-group label {
   display: block;
   margin-bottom: 5px;
-  color:  #ECE3CE ;
+  color: #ece3ce;
 }
 
 .input-group input {
@@ -59,8 +59,8 @@ button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ECE3CE;
-  color: #3A4D39;
+  background-color: #ece3ce;
+  color: #3a4d39;
   cursor: pointer;
 }
 
@@ -70,19 +70,19 @@ button:hover {
 
 @media (max-width: 768px) {
   .login-card {
-      flex-direction: column;
-      margin-top: 200px;
+    flex-direction: column;
+    margin-top: 200px;
   }
 
   .card-image img {
-      width: 100%; 
-      height: 200px; 
+    width: 100%;
+    height: 200px;
   }
 }
-.login-link{
+.login-link {
   text-decoration: none;
-  color: #ECE3CE;
+  color: #ece3ce;
 }
-p{
-  color: #ECE3CE;
+p {
+  color: #ece3ce;
 }

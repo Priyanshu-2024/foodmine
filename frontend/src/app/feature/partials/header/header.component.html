@@ -36,9 +36,9 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              {{user.name}}
+              {{ user.name }}
             </a>
-            <ul  class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><a class="dropdown-item" href="#">Orders</a></li>
               <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
@@ -47,7 +47,7 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/cart-page"
               ><i class="bi bi-cart"></i> Cart
-              <span class="badge text-bg-danger">{{cartQuantity}}</span></a
+              <span class="badge text-bg-danger">{{ cartQuantity }}</span></a
             >
           </li>
         </ul>

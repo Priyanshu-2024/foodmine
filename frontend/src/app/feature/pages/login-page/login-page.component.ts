@@ -14,12 +14,12 @@ export class LoginPageComponent implements OnInit {
   isSubmitted = false;
 
   returnUrl = '';
-  user: User | null = null; 
+  user: User | null = null;
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
     private activatedRoute: ActivatedRoute,
-    private router:Router,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -31,7 +31,7 @@ export class LoginPageComponent implements OnInit {
 
     this.returnUrl = this.activatedRoute.snapshot.queryParams.returnUrl;
 
-    this.userService.userObservable.subscribe(user => {
+    this.userService.userObservable.subscribe((user) => {
       this.user = user;
     });
   }
@@ -44,11 +44,13 @@ export class LoginPageComponent implements OnInit {
     this.isSubmitted = true;
     if (this.loginForm.invalid) return;
 
-    this.userService.login({
-      email: this.fc.email.value,
-      password: this.fc.password.value,
-    }).subscribe(()=>{
-      this.router.navigateByUrl(this.returnUrl);
-    });
+    this.userService
+      .login({
+        email: this.fc.email.value,
+        password: this.fc.password.value,
+      })
+      .subscribe(() => {
+        this.router.navigateByUrl(this.returnUrl);
+      });
   }
 }

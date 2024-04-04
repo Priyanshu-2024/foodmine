@@ -1,8 +1,8 @@
 <app-search></app-search>
 <app-tags></app-tags>
 <app-not-found
-[visible]="!foods || !foods.length"
-resetLinkText="Reset Search"
+  [visible]="!foods || !foods.length"
+  resetLinkText="Reset Search"
 ></app-not-found>
 <ul class="my-5">
   <li *ngFor="let food of foods">

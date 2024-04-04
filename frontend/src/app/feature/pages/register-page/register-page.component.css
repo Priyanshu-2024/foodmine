@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 10px;
   min-height: 100vh;
@@ -7,17 +8,17 @@ body, html {
   align-items: center;
   /* background-color: #ffffff; */
 }
-h2{
-  color: #ECE3CE;
+h2 {
+  color: #ece3ce;
 }
 .login-card {
   display: flex;
-  background-color: #3A4D39;
+  background-color: #3a4d39;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   max-width: 90%;
-  width: 800px; 
+  width: 800px;
 }
 
 .card-image {
@@ -37,8 +38,6 @@ h2{
   text-align: center;
 }
 
-
-
 text-input {
   margin-bottom: 15px;
   width: 100% !important;
@@ -55,9 +54,7 @@ text-input {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  
 }
-
 
 button {
   font-size: 16px;
@@ -66,8 +63,8 @@ button {
   padding: 12px;
   border: none;
   border-radius: 5px;
-  background-color: #ECE3CE;
-  color: #3A4D39;
+  background-color: #ece3ce;
+  color: #3a4d39;
   cursor: pointer;
 }
 
@@ -93,10 +90,10 @@ button:hover {
     width: 100%;
   }
 }
-.login-link{
+.login-link {
   text-decoration: none;
-  color: #ECE3CE;
+  color: #ece3ce;
 }
-p{
-  color: #ECE3CE;
+p {
+  color: #ece3ce;
 }

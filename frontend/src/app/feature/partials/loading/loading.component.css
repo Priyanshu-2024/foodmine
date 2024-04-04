@@ -1,4 +1,4 @@
-.container-fluid{
+.container-fluid {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -8,7 +8,7 @@
   left: 0;
 }
 
-.details{
+.details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,13 +17,12 @@
   width: 100%;
 }
 
-img{
-  /* border-bottom: 10px solid #3A4D39; */
+img {
   width: 200px;
   height: 200px;
 }
 
-h1{
-color: #3A4D39;
-text-transform: lowercase;
+h1 {
+  color: #3a4d39;
+  text-transform: lowercase;
 }

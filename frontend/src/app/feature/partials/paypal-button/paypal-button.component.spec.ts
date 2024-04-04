@@ -8,9 +8,8 @@ describe('PaypalButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaypalButtonComponent ]
-    })
-    .compileComponents();
+      declarations: [PaypalButtonComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PaypalButtonComponent);
     component = fixture.componentInstance;

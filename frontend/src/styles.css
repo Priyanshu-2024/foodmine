@@ -1,22 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap'); */
-
-body{
-    margin: 0;
-    background-color: #e9e5dc !important;
+body {
+  margin: 0;
+  background-color: #e9e5dc !important;
 }
 
-*{
-    box-sizing: 16px;
-    /* font-family: 'Inconsolata',sans-serif; */
-    font-style: normal;
-    font-weight: 200 900;
-    font-stretch: 100%;
-    font-display: swap;
-    
+* {
+  box-sizing: 16px;
+  font-style: normal;
+  font-weight: 200 900;
+  font-stretch: 100%;
+  font-display: swap;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-
- 

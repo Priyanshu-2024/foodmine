@@ -6,29 +6,26 @@ import { User } from 'src/app/shared/models/user';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  cartQuantity = 0;
+  user!: User;
+  constructor(cartService: CartService, private userService: UserService) {
+    cartService.getCartObservable().subscribe((newCart) => {
+      this.cartQuantity = newCart.totalCount;
+    });
 
-    cartQuantity = 0;
-    user!:User;
-    constructor(cartService:CartService,private userService:UserService){
-      cartService.getCartObservable().subscribe((newCart)=>{
-        this.cartQuantity  = newCart.totalCount;
-      })
+    userService.userObservable.subscribe((newUser) => {
+      this.user = newUser;
+    });
+  }
 
-      userService.userObservable.subscribe((newUser)=>{
-        this.user = newUser;
-      });
-    }
+  logout() {
+    this.userService.logout();
+  }
 
-
-
-    logout(){
-      this.userService.logout();
-    }
-
-    get isAuth(){
-      return this.user.id;
-    }  
+  get isAuth() {
+    return this.user.id;
+  }
 }

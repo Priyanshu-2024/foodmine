@@ -7,37 +7,26 @@ import { CartItem } from '../shared/models/cartitem';
 @Injectable({
   providedIn: 'root',
 })
-export class CartService implements OnInit{
+export class CartService implements OnInit {
   private cart: Cart = this.getCartFromLocalStorage();
-  
+
   private cartSubject: BehaviorSubject<Cart> = new BehaviorSubject(this.cart);
 
   addToCart(food: Food): void {
-
-    // Check each item in the cart to find if the food already exists
     let cartItem = this.cart.items.find((item) => {
-        // Ensure that 'item.food' is defined before accessing its 'id' property
-        
-        if (item.food) {
-            return item.food.id == food.id;
-        }
-        return false;
+      if (item.food) {
+        return item.food.id == food.id;
+      }
+      return false;
     });
 
     if (cartItem) {
-      console.log(cartItem)
-        console.log("Item already exists in cart.");
-        return;
+      console.log(cartItem);
+      console.log('Item already exists in cart.');
+      return;
     }
-
-    // If the item does not already exist in the cart, add it
     this.cart.items.push(new CartItem(food));
     this.setCartToLocalStorage();
-
-
-
-    
-    
   }
 
   removeFromCart(foodId: string): void {
@@ -82,16 +71,14 @@ export class CartService implements OnInit{
     this.cartSubject.next(this.cart);
   }
 
-  private getCartFromLocalStorage(): Cart{
+  private getCartFromLocalStorage(): Cart {
     const cartJson = localStorage.getItem('Cart');
-    return  cartJson? JSON.parse(cartJson) : new Cart();
+    return cartJson ? JSON.parse(cartJson) : new Cart();
   }
 
-
-  getCart():Cart{
+  getCart(): Cart {
     return this.cartSubject.value;
   }
-  
 
   constructor() {}
   ngOnInit(): void {

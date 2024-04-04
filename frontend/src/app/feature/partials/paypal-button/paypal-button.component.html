@@ -1,18 +1,15 @@
 <div class="container mt-5">
-    <h2>Stripe Checkout</h2>
-    <div class="row mt-5">
-      <div class="col">
-        <button class="btn btn-warning btn-lg" (click)="pay(order.totalPrice)" >Pay ${{order.totalPrice}}</button>
-      </div>
-      <!-- <div class="col-md-4">
-        <button (click)="pay(30)" class="btn btn-success btn-block">Pay $30</button>
-      </div>
-      <div class="col-md-4">
-        <button (click)="pay(50)" class="btn btn-info btn-block">Pay $50</button>
-      </div>     -->
+  <h2>Stripe Checkout</h2>
+  <div class="row mt-5">
+    <div class="col">
+      <button class="btn btn-warning btn-lg" (click)="pay(order.totalPrice)">
+        Pay ${{ order.totalPrice }}
+      </button>
     </div>
-    <p class="mt-5">
-        Try it out using the test card number <b>4242 4242 4242 4242</b>, a random three-digit CVC number, any expiration date in the future, and a random five-digit U.S. ZIP code.
-    </p>
   </div>
-  
+  <p class="mt-5">
+    Try it out using the test card number <b>4242 4242 4242 4242</b>, a random
+    three-digit CVC number, any expiration date in the future, and a random
+    five-digit U.S. ZIP code.
+  </p>
+</div>

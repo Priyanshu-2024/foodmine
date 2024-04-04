@@ -3,14 +3,13 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'default-button',
   templateUrl: './default-button.component.html',
-  styleUrls: ['./default-button.component.css']
+  styleUrls: ['./default-button.component.css'],
 })
 export class DefaultButtonComponent implements OnInit {
-
   @Input()
   type: 'submit' | 'button' = 'submit';
   @Input()
-  text:string = 'Submit';
+  text: string = 'Submit';
   @Input()
   bgColor = '#e72929';
   @Input()
@@ -21,9 +20,7 @@ export class DefaultButtonComponent implements OnInit {
   widthRem = 12;
   @Output()
   onClick = new EventEmitter();
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

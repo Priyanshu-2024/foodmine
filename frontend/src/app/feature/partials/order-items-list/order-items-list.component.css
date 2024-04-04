@@ -1,6 +1,5 @@
 .order-items {
   margin-top: 20px;
- 
 }
 
 .order-items h2 {
@@ -17,28 +16,28 @@ table {
   border-collapse: collapse;
   border-radius: 8px;
   overflow: hidden;
-  
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   text-align: left;
 }
 
 th {
-  background-color: #3A4D39;
-  color: #ECE3CE;
+  background-color: #3a4d39;
+  color: #ece3ce;
 }
-td{
-  background-color: #3A4D39;
-  color: #ECE3CE;
+td {
+  background-color: #3a4d39;
+  color: #ece3ce;
 }
 tr:nth-child(even) {
-  background-color: #3A4D39;
+  background-color: #3a4d39;
 }
 
 tr:hover {
-  background-color: #3A4D39;
+  background-color: #3a4d39;
 }
 
 .image-cell img {

@@ -2,7 +2,7 @@
   text-decoration: none;
 }
 ul {
-  background-color: #3A4D39;
+  background-color: #3a4d39;
   display: flex;
   flex-direction: column;
   flex: 3 0;
@@ -69,7 +69,7 @@ li .remove-button {
 }
 
 .checkout {
-  background-color: #3A4D39;
+  background-color: #3a4d39;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

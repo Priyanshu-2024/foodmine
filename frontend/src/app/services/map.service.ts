@@ -3,27 +3,26 @@ import { LatLngLiteral } from 'leaflet';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MapService {
+  constructor() {}
 
-constructor() { }
-
-  getCurrentLocation(): Observable<LatLngLiteral>{
+  getCurrentLocation(): Observable<LatLngLiteral> {
     return new Observable((observer) => {
-      if(!navigator.geolocation) return;
+      if (!navigator.geolocation) return;
 
       return navigator.geolocation.getCurrentPosition(
         (pos) => {
           observer.next({
             lat: pos.coords.latitude,
-            lng: pos.coords.longitude
-          })
+            lng: pos.coords.longitude,
+          });
         },
         (error) => {
           observer.error(error);
         }
-      )
-    })
+      );
+    });
   }
 }

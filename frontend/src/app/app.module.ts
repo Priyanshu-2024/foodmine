@@ -57,7 +57,6 @@ import { NgxPayPalModule } from 'ngx-paypal';
     MapComponent,
     PaymentPageComponent,
     PaypalButtonComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -77,7 +76,6 @@ import { NgxPayPalModule } from 'ngx-paypal';
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true },
-
   ],
   bootstrap: [AppComponent],
 })
