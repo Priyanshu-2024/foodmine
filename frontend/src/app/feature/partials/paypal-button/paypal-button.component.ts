@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { CartService } from 'src/app/services/cart.service';
 import { Order } from 'src/app/shared/models/order';
 @Component({
   selector: 'app-paypal-button',
@@ -11,7 +12,7 @@ export class PaypalButtonComponent {
   @Input()
   order!: Order;
 
-  constructor(private router: Router, private tosterservice: ToastrService) {}
+  constructor(private cartservice:CartService,private router: Router, private tosterservice: ToastrService) {}
   handler: any = null;
   ngOnInit() {
     this.loadStripe();
@@ -28,6 +29,7 @@ export class PaypalButtonComponent {
         // alert('success');
         this.tosterservice.success('Payment successfull');
         this.router.navigate(['/home']);
+        this.cartservice.clearCart();
       },
     });
 
